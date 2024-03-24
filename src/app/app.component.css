@@ -1,0 +1,15 @@
+/* app.component.css */
+.example-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .example-sidenav {
+    width: 200px;
+  }s
+  
+  .example-content {
+    padding: 20px;
+    flex: 1;
+  }
+  

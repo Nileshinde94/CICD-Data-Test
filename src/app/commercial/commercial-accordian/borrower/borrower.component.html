@@ -1,0 +1,204 @@
+
+<form (ngSubmit)="submitBorrowerData()">
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Borrower Information</mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="form-row">
+      <mat-form-field appearance="fill">
+        <mat-label>Account Number</mat-label>
+        <input matInput [(ngModel)]="borrowerData.accountnumber" name="accountnumber_borrower"
+          placeholder="Enter Account Number">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Flag</mat-label>
+        <input matInput [(ngModel)]="borrowerData.flag" name="flag_borrower"
+          placeholder="Enter Flag">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Segment Identifier</mat-label>
+        <mat-select [(ngModel)]="borrowerData.segmentidentifier" name="segmentidentifier_borrower">
+          <mat-option value="Test-1">Option 1</mat-option>
+          <mat-option value="Test-2">Option 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Member Brach Code</mat-label>
+        <input matInput [(ngModel)]="borrowerData.memberbranchcode" name="memberbranchcode_borrower"
+          placeholder="Enter Member Brach Code">
+      </mat-form-field>
+    </div>
+
+    <div class="form-row">
+      <mat-form-field appearance="fill">
+        <mat-label>Previous Member Brach Code</mat-label>
+        <input matInput [(ngModel)]="borrowerData.previousmemberbranchcode" name="previousbranchcode_borrower"
+          placeholder="Enter Previous Member Brach Code">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Borrower's Name</mat-label>
+        <input matInput [(ngModel)]="borrowerData.borrowername" name="Name_borrower"
+          placeholder="Enter Borrower Name">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Borrower Short Name</mat-label>
+        <input matInput [(ngModel)]="borrowerData.borrowershortname" name="shortname_borrower"
+          placeholder="Enter Borrower Short Name">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Company Registration Number</mat-label>
+        <input matInput [(ngModel)]="borrowerData.companyregistrationnumber" name="companyregistrationnumber_borrower"
+          placeholder="Enter Company Registration Number">
+      </mat-form-field>
+    </div>
+
+    <div class="form-row">
+      <mat-form-field appearance="fill">
+        <mat-label>Date of Incorporation</mat-label>
+        <input matInput [matDatepicker]="dateofincorporationdate1" [(ngModel)]="borrowerData.dateofIncorporation" id="dateofIncorporation_borrower" name="dateofIncorporation_borrower" placeholder="Pick a date">
+        <mat-datepicker-toggle matSuffix [for]="dateofincorporationdate1"></mat-datepicker-toggle>
+        <mat-datepicker #dateofincorporationdate1></mat-datepicker>
+      </mat-form-field>
+
+
+      <mat-form-field appearance="fill">
+        <mat-label>Pan Card Number</mat-label>
+        <input matInput [(ngModel)]="borrowerData.pancardborrower" name="pancard_borrower" placeholder="Enter Pan Card Number">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>CIN</mat-label>
+        <input matInput [(ngModel)]="borrowerData.cinborrower" name="cin_borrower"
+          placeholder="Enter CIN">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>TIN</mat-label>
+        <input matInput  [(ngModel)]="borrowerData.tinborrower" name="tin_borrower"
+          placeholder="Enter TIN">
+      </mat-form-field>
+
+
+    </div>
+
+
+    <div class="form-row">
+      <mat-form-field appearance="fill">
+        <mat-label>Service TAX #</mat-label>
+        <input matInput [(ngModel)]="borrowerData.servicetaxborrower" name="servicetax_borrower"
+          placeholder="Enter Service TAX">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Other ID</mat-label>
+        <input matInput  [(ngModel)]="borrowerData.otheridborrower" name="otherid_borrower"
+          placeholder="Enter Other ID">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Borrowers Legal Constitution</mat-label>
+        <input matInput [(ngModel)]="borrowerData.borrowersLegalConstitution" name="borrowerlegelconstitution" placeholder="Enter Borrowers Legal Constitution">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label> Business Category</mat-label>
+        <input matInput [(ngModel)]="borrowerData.business" name="filler" placeholder="Enter Business Category">
+      </mat-form-field>
+   
+
+
+    </div>
+    <div class="form-row">
+      <mat-form-field appearance="fill">
+        <mat-label>Business / Industry Type</mat-label>
+        <mat-select [(ngModel)]="borrowerData.businessCategory" name="businesstype_borrower">
+          <mat-option value="0">--Select Business/industry Type--</mat-option>
+          <mat-option value="1">Option 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Class Of Activity 1</mat-label>
+        <input matInput [(ngModel)]="borrowerData.classOfActivity1" name="classOfActivity1"
+          placeholder="Enter Class Of Activity 1">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Class Of Activity 2</mat-label>
+        <input matInput [(ngModel)]="borrowerData.classOfActivity2" name="classOfActivity2"
+          placeholder="Enter Class Of Activity 2">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Class Of Activity 3</mat-label>
+        <input matInput [(ngModel)]="borrowerData.classOfActivity3" name="classOfActivity3"
+          placeholder="Enter Class Of Activity 3">
+      </mat-form-field>
+     
+
+
+    </div>
+    <div class="form-row">
+      <mat-form-field appearance="fill">
+        <mat-label>SIC Code</mat-label>
+        <input matInput  [(ngModel)]="borrowerData.sicCode" name="sicCode" placeholder="Enter SIC Code">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Sales Figure</mat-label>
+        <input matInput [(ngModel)]="borrowerData.salesFigure" name="salesFigure" placeholder="Enter Sales Figure">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Financial Year</mat-label>
+        <input matInput [matDatepicker]="financialyeardate" [(ngModel)]="borrowerData.financialYear" name="financialyear_borrower" placeholder="Pick a date">
+        <mat-datepicker-toggle matSuffix [for]="financialyeardate"></mat-datepicker-toggle>
+        <mat-datepicker #financialyeardate></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Number Of Employees</mat-label>
+        <input matInput  [(ngModel)]="borrowerData.numberOfEmployees" name="numberOfEmployees"
+          placeholder="Enter Number Of Employees">
+      </mat-form-field>
+     
+
+    </div>
+    <div class="form-row">
+      <mat-form-field appearance="fill">
+        <mat-label>Credit Rating</mat-label>
+        <input matInput [(ngModel)]="borrowerData.creditRating" name="creditRating" placeholder="Type something...">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Assessment Agency / Authority</mat-label>
+        <input matInput [(ngModel)]="borrowerData.assessmentAgency" name="assessmentAgency"
+          placeholder="Enter Assessment Agency.">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Credit Rating As On</mat-label>
+        <input matInput  [(ngModel)]="borrowerData.creditRatingAsOn" name="creditRatingAsOn"
+          placeholder="Enter Credit Rating As On">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Credit Rating Expiry Date</mat-label>
+        <input matInput [matDatepicker]="picker3" [(ngModel)]="borrowerData.creditRatingExpiryDate" name="creditRatingExpiryDate" placeholder="Pick a date">
+        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+        <mat-datepicker #picker3></mat-datepicker>
+      </mat-form-field>
+     
+    </div>
+    <div class="form-row">
+    <mat-form-field appearance="fill">
+      <mat-label>Credit Rating Expiry Date</mat-label>
+      <input matInput [matDatepicker]="creaditratingexpirydate" [(ngModel)]="borrowerData.creditRatingExpiryDate" name="creditRatingExpiryDate" placeholder="Pick a date">
+      <mat-datepicker-toggle matSuffix [for]="creaditratingexpirydate"></mat-datepicker-toggle>
+      <mat-datepicker #creaditratingexpirydate></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Filler</mat-label>
+      <input matInput [(ngModel)]="borrowerData.filler" name="filler" placeholder="Enter filler">
+    </mat-form-field>
+  </div>
+    <!-- Submit Button -->
+    <div class="form-row">
+      <button mat-raised-button color="primary" type="submit">Save</button>
+    </div>
+  </mat-expansion-panel>
+
+</form>

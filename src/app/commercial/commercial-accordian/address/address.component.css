@@ -1,0 +1,27 @@
+.full-width-panel {
+    width: 100%;
+  }
+  
+  .custom-panel {
+    width: calc(100% - 32px); /* Assuming padding of 16px on both sides */
+    margin: 16px;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px; /* Adjust as needed */
+  }
+  
+  .col {
+    flex: 1;
+    padding: 0 8px; /* Adjust as needed */
+    box-sizing: border-box;
+  }
+  
+  .save-button {
+    margin-top: 16px;
+    text-align: right;
+  }
+  

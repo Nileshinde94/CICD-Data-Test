@@ -1,0 +1,12 @@
+.form-row {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; 
+  }
+    
+  
+  .mat-form-field {
+    flex: 0 0 calc(25% - 20px); 
+   
+  }
+   
